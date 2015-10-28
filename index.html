@@ -2,15 +2,10 @@
 <html >
   <head>
     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mad9013 - Layout and Picture Element</title>
     
-    
-    
-    
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
+        <link rel="stylesheet" type ="text/css" href="css/style.css">
     
   </head>
 
@@ -63,38 +58,105 @@ The Fallback should be 600px - http://placehold.it/600x600
   </section>
 
 
-<div class="wrapper">
-<picture>
-   <source media="(max-width: 600px)" srcset="http://placehold.it/600x600"/>
-   <source src="http://placehold.it/340x340"/>
-   <img src="http://placehold.it/340x340" alt="This picture loads on non-supporting browsers."/>
-    <source media="(max-width: 400px)"
-srcset = "http://placehold.it/400x400"/>
-    <source scr= "http://placehold.it/600x600"/>
-    <img src="http://placehold.it/600x600" alt ="With a screen width from 400px to 600px"/>
-    <source scr="http://placehold.it/400x400"/>
-    <img src="http://placehold.it/400x400"/>
-    <source src="http://placehold.it/512x512"/>
-    <img src="http://placehold.it/512x512"/>
-    <source media="(max-width:340px)"
-srcsett="http://placehold.it/340x340"/>
-    <source src = "http://fillmurray.com/200/300"/>
-    <img src="http://fillmurray.com/200/300"/>
-    <source src="http://placecage.com/200/300"/>
-    <img src="http://placecage.com/200/300"/>
-    <source src="http://placebear.com/200/300 "/>
-    <img src="http://placebear.com/200/300 "/>
-    <source src=" http://dummyimage.com/450x250/f00/fff"/>
-    <img src=" http://dummyimage.com/450x250/f00/fff"/>
-    <source src = "http://nicenicejpg.com/600/400"/>
-    <img src="http://nicenicejpg.com/600/400"/>
-    <source src=" http://placesheen.com/400/250"/>
-    <img src=" http://placesheen.com/400/250"/>
-    <source src="http://fillmurray.com/g/200/300"/>
-    <img src="http://fillmurray.com/g/200/300"/>
-    <source src="http://placebear.com/g/200/300"/>
-    <img src="http://placebear.com/g/200/300"/>
-    </picture>
+<<div class="wrapper">
+    <ul>
+        <li>
+            <picture>
+            <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)"/>
+            <source srcset ="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width:600px)"/>
+             <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width:800px)"/>
+            <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px) and (max-width: 1024px)">
+          <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px) ">
+            <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+            
+          </picture>
+        
+    </li>
+        
+        
+     <li>
+         <picture>
+       <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)"/>
+        <source srcset="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width: 600px)">
+        <source srcset="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width: 800px)">
+         <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px) and (max-width: 1024px)">
+        <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px) ">
+        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+        </picture>
+        </li>
+        
+         <li>
+            <picture>
+         <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)"/>
+            <source srcset="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width: 600px)">
+             <source srcset="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width: 800px)">
+            <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px) and (max-width: 1024px)">
+            <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px) ">
+           <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                </picture>
+        </li>
+     <li>
+                <picture>
+             <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)"/>
+            <source srcset="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width: 600px)">
+             <source srcset="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width: 800px)">
+            <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px) and (max-width: 1024px)">
+             <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px) ">
+            <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+        </li>     
+<li>
+                    <picture>
+                         <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)"/>
+                        <source srcset="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width: 600px)">
+                        <source srcset="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width: 800px)">
+                        <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px) and (max-width: 1024px)">
+                        <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px) ">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+
+           
+                <li>
+                    <picture>
+                        <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)"/>
+                        <source srcset="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width: 600px)">
+                        <source srcset="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width: 800px)">
+                        <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px) and (max-width: 1024px)">
+                        <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px) ">
+                       <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+            </li>
+            
+            
+            
+                <li>
+                    <picture>
+                     <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)"/>
+                        <source srcset="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width: 600px)">
+                        <source srcset="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width: 800px)">
+                        <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px)"> 
+                        <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px)"/>
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+            </li>
+          
+
+           
+                <li>
+                    <picture>
+                         <source srcset ="http://dummyimage.com/400x400/f00/fff" media="(max-width: 400px)">
+                        <source srcset="http://dummyimage.com/600x600/f00/fff" media="(min-width: 400px) and (max-width: 600px)">
+                        <source srcset="http://dummyimage.com/400x400/f00/fff" media="(min-width: 600px) and (max-width: 800px)">
+                        <source srcset="http://dummyimage.com/512x512/f00/fff" media="(min-width: 800px) and (max-width: 1024px)">
+                        <source srcset="http://dummyimage.com/340x340/f00/fff" media="(min-width: 1024px)" />
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                
+                </li>        
+    
+    </ul>
+
  
 </div>
 
@@ -102,9 +164,9 @@ srcsett="http://placehold.it/340x340"/>
   <p>Copyright MySite 1954<p>
 </footer>
     
+    </div>
     
     
     
-    
-  </body>
+   </body>
 </html>
