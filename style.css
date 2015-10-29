@@ -33,7 +33,9 @@ p{
 }
 
 
-
+li{
+    list-style: none;
+}
 
 /* -- Header -- */
 
@@ -59,44 +61,34 @@ picture,img{
     height:auto;
 }
 
-@media screen and (max-width:600px) {
-    .wrapper {
-        max-width: 600px;
-        width:90%;
-    }
-   
-}
-@media screen and (min-width:600px) and (max-width:600px) {
+@media all and (min-width:600px) and (max-width:1024px) {    
     .wrapper{
-        max-width: 1024px;
-        width:100%;
+         width:100%;
         -webkit-column-count: 2;
-        -moz-column-count: 2
-        column-count: 2
-    
-}
-}
-
-
-
-
-@media screen and (min-width:1024px) and (max-width:1024px) {
-    .wrapper{
-        max-width: 1024px;
-        -webkit-column-count: 3;
-        -moz-column-count:3;
-        column-count: 3;
-       
+        -moz-column-count: 2;
+        column-count: 2;
         
-    }
     
-        
     }
 
-@media screen and  (min-width:1024px){
+}
+
+
+@media all and  (min-width:1024px){
     .col-container{
         text-align: center;
+       
     }
+    
+    .wrapper{
+         width:100%;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        
+    
+    }
+
 }
 
 	
